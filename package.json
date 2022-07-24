@@ -2,8 +2,10 @@
   "name": "playwright-result-pr-comment",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "index.mjs",
   "scripts": {
+    "build": "ncc build",
+    "playwright": "cd playwright && PLAYWRIGHT_JSON_OUTPUT_NAME=../.github/example-report.json npx playwright test",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -12,5 +14,8 @@
   "dependencies": {
     "@actions/core": "^1.9.0",
     "@actions/github": "^5.0.3"
+  },
+  "devDependencies": {
+    "@vercel/ncc": "^0.34.0"
   }
 }
