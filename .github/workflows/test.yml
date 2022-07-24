@@ -9,4 +9,4 @@ jobs:
         id: hello
         uses: ./
         with:
-          playwright-json-path: './.github/example-result.json'
+          playwright-json-path: './.github/example-report.json'

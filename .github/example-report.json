@@ -14,7 +14,7 @@
       {
         "outputDir": "/home/anner/code/playwright-result-pr-comment/playwright/test-results",
         "repeatEach": 1,
-        "retries": 0,
+        "retries": 1,
         "name": "chromium",
         "testDir": "/home/anner/code/playwright-result-pr-comment/playwright/tests",
         "testIgnore": [],
@@ -44,7 +44,7 @@
     "_webServers": [],
     "_globalOutputDir": "/home/anner/code/playwright-result-pr-comment/playwright",
     "_configDir": "/home/anner/code/playwright-result-pr-comment/playwright",
-    "_testGroupsCount": 2
+    "_testGroupsCount": 3
   },
   "suites": [
     {
@@ -67,7 +67,7 @@
                 {
                   "workerIndex": 0,
                   "status": "failed",
-                  "duration": 5947,
+                  "duration": 5965,
                   "error": {
                     "message": "\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveAttribute\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected string: \u001b[32m\"/docs/intro\"\u001b[39m\nReceived string: \u001b[31m\"\"\u001b[39m\nCall log:\n  \u001b[2m- expect.toHaveAttribute with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for selector \"text=this doenst exist!\"\u001b[22m\n",
                     "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveAttribute\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected string: \u001b[32m\"/docs/intro\"\u001b[39m\nReceived string: \u001b[31m\"\"\u001b[39m\nCall log:\n  \u001b[2m- expect.toHaveAttribute with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for selector \"text=this doenst exist!\"\u001b[22m\n\n    at /home/anner/code/playwright-result-pr-comment/playwright/tests/failing.spec.js:14:28"
@@ -76,6 +76,30 @@
                   "stderr": [],
                   "retry": 0,
                   "attachments": [],
+                  "errorLocation": {
+                    "file": "/home/anner/code/playwright-result-pr-comment/playwright/tests/failing.spec.js",
+                    "column": 28,
+                    "line": 14
+                  }
+                },
+                {
+                  "workerIndex": 5,
+                  "status": "failed",
+                  "duration": 6120,
+                  "error": {
+                    "message": "\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveAttribute\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected string: \u001b[32m\"/docs/intro\"\u001b[39m\nReceived string: \u001b[31m\"\"\u001b[39m\nCall log:\n  \u001b[2m- expect.toHaveAttribute with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for selector \"text=this doenst exist!\"\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveAttribute\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected string: \u001b[32m\"/docs/intro\"\u001b[39m\nReceived string: \u001b[31m\"\"\u001b[39m\nCall log:\n  \u001b[2m- expect.toHaveAttribute with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for selector \"text=this doenst exist!\"\u001b[22m\n\n    at /home/anner/code/playwright-result-pr-comment/playwright/tests/failing.spec.js:14:28"
+                  },
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 1,
+                  "attachments": [
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/home/anner/code/playwright-result-pr-comment/playwright/test-results/failing-homepage-has-Playwright-in-title-and-get-started-link-linking-to-the-intro-page-chromium-retry1/trace.zip"
+                    }
+                  ],
                   "errorLocation": {
                     "file": "/home/anner/code/playwright-result-pr-comment/playwright/tests/failing.spec.js",
                     "column": 28,
@@ -93,14 +117,14 @@
       ]
     },
     {
-      "title": "passing.spec.js",
-      "file": "passing.spec.js",
+      "title": "partial.spec.js",
+      "file": "partial.spec.js",
       "line": 0,
       "column": 0,
       "specs": [
         {
-          "title": "homepage has Playwright in title and get started link linking to the intro page",
-          "ok": true,
+          "title": "partial fail",
+          "ok": false,
           "tags": [],
           "tests": [
             {
@@ -111,9 +135,82 @@
               "results": [
                 {
                   "workerIndex": 1,
+                  "status": "failed",
+                  "duration": 1016,
+                  "error": {
+                    "message": "\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveAttribute\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected string: \u001b[32m\"/docs/intro\"\u001b[39m\nReceived string: \u001b[31m\"\"\u001b[39m\nCall log:\n  \u001b[2m- expect.toHaveAttribute with timeout 100ms\u001b[22m\n\u001b[2m  - waiting for selector \"text=this doenst exist!\"\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveAttribute\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected string: \u001b[32m\"/docs/intro\"\u001b[39m\nReceived string: \u001b[31m\"\"\u001b[39m\nCall log:\n  \u001b[2m- expect.toHaveAttribute with timeout 100ms\u001b[22m\n\u001b[2m  - waiting for selector \"text=this doenst exist!\"\u001b[22m\n\n    at /home/anner/code/playwright-result-pr-comment/playwright/tests/partial.spec.js:11:28"
+                  },
+                  "stdout": [
+                    {
+                      "text": "partial fail has some output\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "attachments": [],
+                  "errorLocation": {
+                    "file": "/home/anner/code/playwright-result-pr-comment/playwright/tests/partial.spec.js",
+                    "column": 28,
+                    "line": 11
+                  }
+                },
+                {
+                  "workerIndex": 3,
+                  "status": "failed",
+                  "duration": 913,
+                  "error": {
+                    "message": "\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveAttribute\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected string: \u001b[32m\"/docs/intro\"\u001b[39m\nReceived string: \u001b[31m\"\"\u001b[39m\nCall log:\n  \u001b[2m- expect.toHaveAttribute with timeout 100ms\u001b[22m\n\u001b[2m  - waiting for selector \"text=this doenst exist!\"\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveAttribute\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected string: \u001b[32m\"/docs/intro\"\u001b[39m\nReceived string: \u001b[31m\"\"\u001b[39m\nCall log:\n  \u001b[2m- expect.toHaveAttribute with timeout 100ms\u001b[22m\n\u001b[2m  - waiting for selector \"text=this doenst exist!\"\u001b[22m\n\n    at /home/anner/code/playwright-result-pr-comment/playwright/tests/partial.spec.js:11:28"
+                  },
+                  "stdout": [
+                    {
+                      "text": "partial fail has some output\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 1,
+                  "attachments": [
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/home/anner/code/playwright-result-pr-comment/playwright/test-results/partial-partial-fail-chromium-retry1/trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/home/anner/code/playwright-result-pr-comment/playwright/tests/partial.spec.js",
+                    "column": 28,
+                    "line": 11
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "file": "partial.spec.js",
+          "line": 4,
+          "column": 1
+        },
+        {
+          "title": "partial success",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 4,
                   "status": "passed",
-                  "duration": 1223,
-                  "stdout": [],
+                  "duration": 777,
+                  "stdout": [
+                    {
+                      "text": "partial success has some output\n"
+                    }
+                  ],
                   "stderr": [],
                   "retry": 0,
                   "attachments": []
@@ -122,9 +219,54 @@
               "status": "expected"
             }
           ],
+          "file": "partial.spec.js",
+          "line": 14,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "passing.spec.js",
+      "file": "passing.spec.js",
+      "line": 0,
+      "column": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Passing test group",
           "file": "passing.spec.js",
           "line": 4,
-          "column": 1
+          "column": 6,
+          "specs": [
+            {
+              "title": "homepage has Playwright in title and get started link linking to the intro page",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "status": "passed",
+                      "duration": 1236,
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "file": "passing.spec.js",
+              "line": 5,
+              "column": 2
+            }
+          ]
         }
       ]
     }

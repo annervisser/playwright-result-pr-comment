@@ -18,6 +18,7 @@ const config = {
 	use: {
 		trace: 'on-first-retry',
 	},
+	retries: 1,
 
 	/* Configure projects for major browsers */
 	projects: [
