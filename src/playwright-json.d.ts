@@ -1,10 +1,10 @@
 export interface PlaywrightJsonReport {
-	config: Config;
-	suites: Suite[];
+	config: PlaywrightJsonConfig;
+	suites: PlaywrightJsonSuite[];
 	errors: unknown[];
 }
 
-export interface Config {
+export interface PlaywrightJsonConfig {
 	forbidOnly: boolean;
 	fullyParallel: boolean;
 	globalSetup?: unknown;
@@ -15,7 +15,7 @@ export interface Config {
 	maxFailures: number;
 	metadata: unknown;
 	preserveOutput: string;
-	projects: Project[];
+	projects: PlaywrightJsonProject[];
 	reporter: string[][];
 	reportSlowTests: {
 		max: number;
@@ -34,7 +34,7 @@ export interface Config {
 	_testGroupsCount: number;
 }
 
-export interface Project {
+export interface PlaywrightJsonProject {
 	outputDir: string;
 	repeatEach: number;
 	retries: number;
@@ -45,19 +45,19 @@ export interface Project {
 	timeout: number;
 }
 
-export interface Suite {
+export interface PlaywrightJsonSuite {
 	title: string;
 	file: string;
 	line: number;
 	column: number;
-	specs: Spec[];
+	specs: PlaywrightJsonSpec[];
 }
 
-export interface Spec {
+export interface PlaywrightJsonSpec {
 	title: string;
 	ok: boolean;
 	tags: unknown[];
-	tests: Test[];
+	tests: PlaywrightJsonTest[];
 	file: string;
 	line: number;
 	column: number;
@@ -65,16 +65,16 @@ export interface Spec {
 
 export type TestStatus = 'skipped' | 'expected' | 'unexpected' | 'flaky';
 
-export interface Test {
+export interface PlaywrightJsonTest {
 	timeout: number;
 	annotations: unknown[];
 	expectedStatus: string;
 	projectName: string;
-	results: Result[];
+	results: PlaywrightJsonResult[];
 	status: TestStatus;
 }
 
-export interface Result {
+export interface PlaywrightJsonResult {
 	workerIndex: number;
 	status: string;
 	duration: number;
