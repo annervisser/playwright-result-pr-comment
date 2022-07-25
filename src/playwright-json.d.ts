@@ -74,9 +74,11 @@ export interface PlaywrightJsonTest {
 	status: TestStatus;
 }
 
+export type ResultStatus = 'failed' | 'passed';
+
 export interface PlaywrightJsonResult {
 	workerIndex: number;
-	status: string;
+	status: ResultStatus;
 	duration: number;
 	error: Error;
 	stdout: Stdout[];
