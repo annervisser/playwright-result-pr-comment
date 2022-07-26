@@ -9,3 +9,10 @@ jobs:
         uses: ./
         with:
           playwright-json-path: './example-result/report.json'
+      - name: Upload test traces
+        uses: actions/upload-artifact@v3
+        with:
+          name: playwright-test-traces
+          path: ./example-result/traces
+          if-no-files-found: ignore
+          retention-days: 1
