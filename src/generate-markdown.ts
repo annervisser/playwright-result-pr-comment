@@ -71,9 +71,9 @@ function statusToEmoji(status: TestStatus | ResultStatus) {
 		case 'failed':
 			return '❌';
 		case 'flaky':
-			return '⏭';
-		case 'skipped':
 			return '🤞';
+		case 'skipped':
+			return '⏭';
 	}
 }
 
