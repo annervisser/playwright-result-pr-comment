@@ -1,7 +1,7 @@
 import { generateReport } from "./src/main.js";
 import fs from "node:fs";
 
-const jsonPath = './.github/example-report.json';
+const jsonPath = './example-result/report.json';
 console.log('Generating report based on', jsonPath);
 const output = generateReport(jsonPath);
 

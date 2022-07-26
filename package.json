@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "build": "ncc build -m index.ts",
-    "playwright": "cd playwright && PLAYWRIGHT_JSON_OUTPUT_NAME=../.github/example-report.json npx playwright test",
+    "playwright": "cd playwright && npx playwright test",
     "test": "tsc && node ./.dist/test.js",
     "es": "esbuild --bundle test.ts --format=esm --platform=node --target=node16 --outdir=.dist && node ./.dist/test.js"
   },

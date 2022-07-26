@@ -14,7 +14,11 @@ const {devices} = require('@playwright/test');
  */
 const config = {
 	testDir: './tests',
-	reporter: 'json',
+	outputDir: '../example-result/traces',
+	reporter: [
+		['json', {outputFile: '../example-result/report.json'}],
+		/*['html', { outputFolder: '../example-result/html', open: 'never' }]*/
+	],
 	use: {
 		trace: 'on-first-retry',
 	},
